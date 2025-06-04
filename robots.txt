@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /includes/
+Disallow: /css/
+Disallow: /assets/
+Allow: /assets/logo.png
+Allow: /assets/placeholder.jpg
+Sitemap: https://example.com/sitemap.xml
