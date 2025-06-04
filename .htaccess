@@ -1,0 +1,27 @@
+# Принуждавай HTTPS (по желание)
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Index
+DirectoryIndex index.php
+
+# Защити includes и admin директории от директен достъп
+RewriteRule ^includes/ - [F,L]
+RewriteRule ^admin/(db\.php|helpers\.php|footer\.php|header\.php)$ - [F,L]
+
+# Позволи достъп до assets, css, js
+<FilesMatch "\.(jpg|jpeg|png|gif|css|js|ico|svg)$">
+    Require all granted
+</FilesMatch>
+
+# Забрани изпълнение на PHP в assets (НАПРАВИ ОТДЕЛНО .htaccess В assets ПАПКАТА)
+# В assets/.htaccess сложи:
+# <FilesMatch "\.php$">
+#     Require all denied
+# </FilesMatch>
+
+# Защити .htaccess самия
+<Files .htaccess>
+    Require all denied
+</Files>

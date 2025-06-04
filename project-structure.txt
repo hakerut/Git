@@ -1,0 +1,24 @@
+/
+├── assets/
+│   ├── logo.png
+│   └── placeholder.jpg
+├── css/
+│   └── style.css
+├── includes/
+│   ├── db.php
+│   ├── header.php
+│   ├── footer.php
+│   └── helpers.php
+├── index.php
+├── login.php
+├── logout.php
+├── register.php
+├── auktion_erstellen.php
+├── auktion.php
+├── meine_auktionen.php
+├── angebot_machen.php
+├── admin/
+│   ├── index.php
+│   ├── einstellungen.php
+│   └── benutzer.php
+└── database.sql
