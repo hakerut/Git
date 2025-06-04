@@ -1,0 +1,52 @@
+body {
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    background: #f8f9fa;
+    color: #222;
+}
+.logo {
+    height: 50px;
+}
+.btn-yellow {
+    background: #ffc727;
+    color: #1b2936;
+    border: none;
+}
+.btn-yellow:hover {
+    background: #ffb300;
+}
+.header-nav a {
+    color: #1b2936;
+    font-weight: 500;
+    margin-right: 20px;
+    text-decoration: none;
+}
+.header-nav a.active, .header-nav a:hover {
+    color: #ffc727;
+}
+.card-auction {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px #0001;
+    margin-bottom: 15px;
+    padding: 15px;
+    display: flex;
+}
+.card-auction img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+.card-auction .title {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.card-auction .location {
+    color: #888;
+    font-size: 0.95rem;
+}
+.card-auction .deadline {
+    color: #ffa500;
+    font-weight: bold;
+}
